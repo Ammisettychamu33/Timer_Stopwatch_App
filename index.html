@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#121212" />
+  <title>Timer & Stopwatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Timer & Stopwatch</h1>
+
+    <div class="mode-switch">
+      <button id="toggleMode">Switch to Stopwatch</button>
+      <button id="darkModeToggle" title="Toggle Dark Mode">🌙</button>
+    </div>
+
+    <div id="timerDisplay">00:00:00</div>
+
+    <div class="controls">
+      <div class="time-inputs" id="timeInputs">
+        <input type="number" id="inputHours" placeholder="HH" min="0" max="23" />
+        <input type="number" id="inputMinutes" placeholder="MM" min="0" max="59" />
+        <input type="number" id="inputSeconds" placeholder="SS" min="0" max="59" />
+      </div>
+
+      <div class="buttons">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+
+    <footer>Developed by Chamundeswari</footer>
+  </div>
+
+  <audio id="alertSound" src="alarm.mp3" preload="auto" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>

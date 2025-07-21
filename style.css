@@ -1,0 +1,85 @@
+:root {
+  --bg-color: linear-gradient(135deg, #89adef, #2a5298);
+  --text-color: #111;
+  --btn-bg: #007bff;
+  --btn-text: #fff;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f4f4f4;
+  --btn-bg: #444;
+  --btn-text: #fff;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgb(255, 255, 255);
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+#timerDisplay {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.controls,
+.mode-switch {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:10px;
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 10px 2px;
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+footer {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
